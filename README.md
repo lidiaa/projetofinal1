@@ -59,4 +59,9 @@ Para rodar os testes **unitários**, utilizar o comando **npm run test**
 
 Para verificar as **métricas dos testes**, utilizar o comando **npm run test:coverage**
 
+Para rodar os testes de **integração**
+
+
+Para rodar os testes de **aceitação**
+
 
