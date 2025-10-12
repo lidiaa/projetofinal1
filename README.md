@@ -1,6 +1,8 @@
 # IF Sudeste MG
 Pós-graduação em Desenvolvimento Full Stack
+
 Disciplina: DFS03007 - Engenharia de Software - T01 (2025.2)
+
 Aluna: Lidia M. de Bem B. da Silva
 
 ---
@@ -60,5 +62,6 @@ no **package.json**, adicionar o comando **"test:coverage": "npx jest --coverage
 Para rodar os testes **unitários**, utilizar o comando **npm run test**
 
 Para verificar as **métricas dos testes**, utilizar o comando **npm run test:coverage**
+
 
 
