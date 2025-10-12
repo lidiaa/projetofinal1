@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1760227573785" clover="3.2.0">
+  <project timestamp="1760227573785" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1" elements="35" coveredelements="35" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="Processo.js" path="C:\Users\Developer\Documents\IFSudesteMG\2 - Engenharia de Software\ProjetoFinal1\backend\src\processo\Processo.js">
+      <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
+      <line num="17" count="12" type="stmt"/>
+      <line num="20" count="12" type="stmt"/>
+      <line num="23" count="12" type="stmt"/>
+      <line num="27" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="32" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="37" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="42" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="43" count="2" type="stmt"/>
+      <line num="48" count="5" type="stmt"/>
+      <line num="49" count="5" type="stmt"/>
+      <line num="50" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="62" count="3" type="stmt"/>
+      <line num="63" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="70" count="2" type="stmt"/>
+      <line num="75" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
