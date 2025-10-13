@@ -91,7 +91,7 @@ class Processo{
                     'Authorization': `APIKey ${apiKey}` 
                 }
             });
-      console.log("Dados do processo:", data);      
+      //console.log("Dados do processo:", data);      
 
             if (data.hits.total.value > 0) {
 

@@ -144,8 +144,8 @@ describe("Chamando a API Mockada", () => {
             expect(dados.ultimaAtualizacao).toBe(ultimaAtualizacao);
         }
     );
-     test("Deve retornar erro caso não encontre o processo", async () => {
-        const processo = new Processo("0009999-00.2023.1.00.0000");
+    test("Deve retornar erro caso não encontre o processo", async () => {
+        const processo = new Processo("0009999-00.2023.1.90.0000");
 
         axios.get.mockResolvedValue({
             data: {
@@ -159,4 +159,21 @@ describe("Chamando a API Mockada", () => {
         const resultado = await processo.consultaProcessual();
         expect(resultado).toBeNull();
     });
+
+    test("deve retornar erro se houver falha na consulta", async () => {
+        const processo = new Processo("0001234-59.2023.8.26.0956");
+
+        axios.get.mockRejectedValue(new Error("Falha na API"));
+        const consoleSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+
+        const resultado = await processo.consultaProcessual();
+
+        expect(resultado).toBeNull();
+        expect(consoleSpy).toHaveBeenCalledWith(
+            "Erro ao realizar consulta processual:", expect.any(Error)
+        );
+
+        consoleSpy.mockRestore();
+    });
+
 })
