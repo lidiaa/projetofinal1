@@ -33,6 +33,9 @@ Para rodar este sistema, você precisará das seguintes dependências:
 - **Express**
 - **jest"** "^30.2.0"
 - **axios**: "^1.12.2"
+- **@cucumber/gherkin**: "^36.0.0"
+- **jest-cucumber**: "^4.5.0"
+- **puppeteer**: "^24.24.1"
 
 
 ---
@@ -49,9 +52,21 @@ Criar as pastas src > processo > e o arquivo Processo.js
 
 Criar também a pasta tests > e o arquivo Processo.test.js
 
-No **package.json**, adicionar a linha  **"test": "npx jest"** e **"test:coverage": "npx jest --coverage"** em "scripts"
+No **package.json** do backend, adicionar a linha  **"test": "npx jest"** e **"test:coverage": "npx jest --coverage"** em "scripts"
 
+Transformar a pasta raiz do projeto em projeto node através do comando **npm init -y**
 
+Para os testes de aceitação, é necessário instalar na pasta raiz os pacotes **npm i -D @cucumber/gherkin jest jest-cucumber puppeteer**
+
+No **package.json** da pasta raiz, adicionar em script: **"test:acceptance": "jest"** e, depois das devDependences:
+**"jest": {**
+    "testMatch": [
+      "<rootDir>/tests/acceptance/**/*.steps.js"
+    ]
+}
+
+Na pasta raiz, criar as pastas **tests** > **features** > e o arquivo **processo.feature**
+Depois, novamente em **tests**, criar o diretório **acceptance** > e o arquivo **processo.steps.js**
 ---
 
 ## Testes
@@ -59,7 +74,5 @@ No **package.json**, adicionar a linha  **"test": "npx jest"** e **"test:coverag
 Para rodar os testes **unitários** e de **integração**, utilizar o comando **npm run test**
 
 Para verificar as **métricas dos testes**, utilizar o comando **npm run test:coverage**
-
-
 
 Para rodar os testes de **aceitação**
