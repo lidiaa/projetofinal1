@@ -1,6 +1,8 @@
 # IF Sudeste MG
 Pós-graduação em Desenvolvimento Full Stack
+
 Disciplina: DFS03007 - Engenharia de Software - T01 (2025.2)
+
 Aluna: Lidia M. de Bem B. da Silva
 
 ---
