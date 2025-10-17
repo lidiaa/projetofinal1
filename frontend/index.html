@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consulta de Processo - DataJud</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Consulta de Processo</h1>
+                <p>Consulte informações sobre processos judiciais (mock).</p>
+            </header>
+
+            <div id="alerta-processo" id="alerta-processo">
+                Por favor, digite o número do processo completo no formato 0000000-00.0000.0.00.0000 (25 caracteres).
+            </div>    
+
+            <br>
+            <div class="consulta">
+                <form id="form-consulta" action="detalhes.html" method="get">
+                    <label for="numero-processo">Número do Processo:</label>
+                    <input type="text" id="numero-processo" placeholder="Digite o número do processo (ex. 0000000-00.0000.0.00.0000)" maxlength="25" required>
+                    <button type="submit" class="button" id="btn-consultar">Buscar</button>
+                </form>
+                
+                <a href="historico.html">
+                    <button class="button" id="btn-historico">Histórico</button>
+                </a>
+            </div>
+
+            <footer>
+                <p>API Mockada DataJud - Sistema de Consulta de Processos Judiciais</p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>
